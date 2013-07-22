@@ -1,5 +1,4 @@
 #ASNumber
----
 This Chrome extension shows the AS number of the site you visit.
 
 ![Screenshot](https://raw.github.com/sanderv32/ASNumber/master/screenshot.png)
