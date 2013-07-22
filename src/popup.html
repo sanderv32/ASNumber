@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+body {
+	min-width:357px;
+	overflow-x:hidden;
+	background-color: #FFFFDD;
+	font-family: Arial,Helvetica,Sans-Serif;
+}
+
+#status #result {
+	background-color: #FFFFDD;
+}
+
+.asinfo {
+	padding-left: 0px;
+}
+
+.asinfo .title {
+	font-weight: bold;
+	margin-left: 0px;
+}
+
+.asinfo table {
+	padding-left: 8px;
+	margin: 0px;
+	border: 0;
+}
+
+.asinfo table tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.asinfo table tr td {
+	padding: 0;
+	padding-right: 1px;
+	vertical-align: top;
+	margin: 0;
+	border: 0;
+}
+</style>
+
+</head>
+<body>
+	<div id="status">Resolving AS....</div>
+	<div id="result"></div>
+</body>
+</html>
+
+<script>
+	window.onload = function() {
+		chrome.tabs.getSelected(null, function(tab) {
+			chrome.extension.sendRequest({url: tab.url});
+		});
+	}
+</script>
+
