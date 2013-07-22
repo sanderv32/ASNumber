@@ -1,16 +1,21 @@
 {
   "name": "ASnumber",
-  "version": "2.3.1",
+  "version": "2.4",
   "description": "Fetches AS Number routing information on every visited Webserver",
-  "background_page": "background.html",
+  "background": {
+    "scripts": ["defaults.js","cacheClass.js","backGround.js"],
+    "persistent": false
+  },
   "options_page": "options.html",
-  "update_url": "http://addons.amber-verhaar.info/ASNumber-updates.xml",
-  "homepage_url": "http://addons.amber-verhaar.info",
+  "update_url": "https://raw.github.com/sanderv32/ASNumber/master/bin/ASNumber-updates.xml",
+  "homepage_url": "https://github.com/sanderv32/ASNumber",
+  "manifest_version": 2,
   "icons": { "128": "logo.png" },
   "browser_action": {
     "default_icon": "logo.png",
-    "popup": "popup.html"
+    "default_popup": "popup.html"
   },
+  "content_security_policy": "script-src 'unsafe-eval'; connect-src *; object-src 'unsafe-eval'",
   "permissions": [
     "tabs",
     "<all_urls>"

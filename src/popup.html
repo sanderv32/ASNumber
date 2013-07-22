@@ -12,6 +12,11 @@ body {
 	background-color: #FFFFDD;
 }
 
+#version {
+	font-size: 9px;
+	text-align: right;
+}
+
 .asinfo {
 	padding-left: 0px;
 }
@@ -41,19 +46,11 @@ body {
 	border: 0;
 }
 </style>
-
 </head>
 <body>
 	<div id="status">Resolving AS....</div>
 	<div id="result"></div>
+	<div id="version"></div>
 </body>
 </html>
-
-<script>
-	window.onload = function() {
-		chrome.tabs.getSelected(null, function(tab) {
-			chrome.extension.sendRequest({url: tab.url});
-		});
-	}
-</script>
-
+<script src="popup.js"></script>

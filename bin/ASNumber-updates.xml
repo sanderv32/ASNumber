@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='bbambanpahainjhgijdnieceeamggaka'>
-    <updatecheck codebase='http://addons.amber-verhaar.info/ASNumberV2.3.1.crx' version='2.3.1' />
+    <updatecheck codebase='https://github.com/sanderv32/ASNumber/raw/master/bin/ASNumberV2.3.1.crx' version='2.3.1' />
+  </app>
+  <app appid='lgdfffedleodkakomlgleccajmliaafd'
+    <updatecheck codebase='https://github.com/sanderv32/ASNumber/raw/master/bin/ASNumberV2.4.crx' version='2.4' />
   </app>
 </gupdate>

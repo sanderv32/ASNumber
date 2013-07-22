@@ -78,7 +78,15 @@ if (!ttl) {
 }
 cache.ttl = ttl;
 
-chrome.extension.onRequest.addListener(function(request, sender, sendResponse) 
-{ 
-	getASN(request.url);
+chrome.runtime.onMessage.addListener(function(request, send, sendResponse)
+{
+	switch(request.command) {
+		case "selected-tab":
+			chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT}, function(tabs) {
+					getASN(tabs[0].url);
+			});
+			break;
+		default:
+			break;
+	}
 }); 
