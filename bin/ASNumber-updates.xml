@@ -3,10 +3,10 @@
   <app appid='bbambanpahainjhgijdnieceeamggaka'>
     <updatecheck codebase='https://github.com/sanderv32/ASNumber/raw/master/bin/ASNumberV2.3.1.crx' version='2.3.1' />
   </app>
-  <app appid='lgdfffedleodkakomlgleccajmliaafd'
+  <app appid='lgdfffedleodkakomlgleccajmliaafd'>
     <updatecheck codebase='https://github.com/sanderv32/ASNumber/raw/master/bin/ASNumberV2.4.crx' version='2.4' />
   </app>
-  <app appid='jdmflpedbkomjcdaecidooejhlhnfagn'
+  <app appid='jdmflpedbkomjcdaecidooejhlhnfagn'>
     <updatecheck codebase='https://github.com/sanderv32/ASNumber/raw/master/bin/ASNumberV2.5.crx' version='2.5' />
   </app>
 </gupdate>
