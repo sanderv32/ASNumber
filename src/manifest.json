@@ -1,6 +1,6 @@
 {
   "name": "ASnumber",
-  "version": "2.4",
+  "version": "2.5",
   "description": "Fetches AS Number routing information on every visited Webserver",
   "background": {
     "scripts": ["defaults.js","cacheClass.js","backGround.js"],
